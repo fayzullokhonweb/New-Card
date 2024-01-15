@@ -1,0 +1,171 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/montserrat-v26-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/montserrat-v26-latin-700.woff2') format('woff2');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F2EAE2;
+  color: #6C7289;
+  font-family: ' Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+
+
+.card {
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+
+.card__img {
+  border-radius: 10px 0 0 10px;
+  z-index: -1;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 300px;
+}
+
+.card__content-text {
+  font-size: 12px;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+  line-height: normal;
+}
+
+.card__content-title {
+  color: #1C232B;
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+
+.card__content-description {
+  margin-bottom: 29px;
+}
+
+.card__content-number {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  margin-bottom: 30px;
+}
+
+.card__content-number__big {
+  color: #3D8168;
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.card__content-number__mini {
+  text-decoration: line-through;
+  font-size: 13px;
+}
+
+.card__btn {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  border-radius: 8px;
+  background-color: #3D8168;
+  padding: 15px 62px 16px 63px;
+}
+
+.card__btn:active {
+  background: #1A4032;
+}
+
+.card__btn-text {
+  color: #FFF;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@media(max-width:375px) {
+
+  body {
+    padding: 28px 16px;
+  }
+
+  .card {
+    max-width: 343px;
+    flex-direction: column;
+  }
+
+  .card__img {
+    object-position: bottom;
+  }
+
+  .card__content {
+    padding: 24px;
+  }
+
+  .card__content-text {
+    margin-bottom: 12px;
+  }
+
+  .card__content-title {
+    margin-bottom: 16px;
+  }
+
+  .card__content-description {
+    margin-bottom: 24px;
+  }
+
+  .card__content-number {
+    gap: 19px;
+    margin-bottom: 20px;
+  }
+
+}
